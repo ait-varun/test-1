@@ -12,6 +12,9 @@ export default function InstaPosts() {
   return (
     <>
       <section className="w-full">
+        <h1 className="beton-font text-4xl text-center font-extrabold py-6">
+          INSTAGRAM
+        </h1>
         <div className="grid grid-cols-1 sm:grid-cols-5 gap-0">
           {InstaImages.map((image, index) => {
             return (
