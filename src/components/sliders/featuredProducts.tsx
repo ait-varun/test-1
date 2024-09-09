@@ -55,7 +55,7 @@ export default function FeaturedProducts() {
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-8">
           <h2
-            className="text-3xl md:text-4xl font-bold"
+            className="text-3xl md:text-4xl font-extrabold beton-font"
             style={{ color: colors.darkGray }}>
             FEATURED PRODUCTS
           </h2>
