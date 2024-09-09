@@ -65,8 +65,8 @@ export default function Testimonials() {
 
   return (
     <section className="container mx-auto px-4 py-8 relative">
-      <div className="flex flex-col md:flex-row md:items-center md:space-x-8">
-        <div className="md:w-1/2 mb-8 md:mb-0">
+      <div className="flex flex-col md:flex-row md:space-x-8">
+        <div className="md:w-1/4 mb-8 md:mb-0">
           <h2 className="text-4xl font-extrabold beton-font mb-4">
             WHAT CUSTOMERS SAY ABOUT US
           </h2>
@@ -75,12 +75,12 @@ export default function Testimonials() {
               <Star key={i} className="w-4 h-4 text-orange-400 fill-current" />
             ))}
           </div>
-          <p className="open-sans-italic mb-4">
+          <p className="open-sans-italic mb-4 text-3xl">
             Over 5,000 5-star reviews for our award-winning products
           </p>
         </div>
 
-        <div className="md:w-1/2 ">
+        <div className="md:w-full overflow-hidden">
           <Swiper
             modules={[Navigation, Pagination]}
             spaceBetween={20}
@@ -126,15 +126,15 @@ export default function Testimonials() {
           </Swiper>
           <button
             onClick={() => swiperRef2.current?.slidePrev()}
-            className="absolute top-40 right-16 transform -translate-y-1/2 text-[#363636] cursor-pointer z-10 hover:text-[#f47c27] transition-colors"
-            aria-label="Previous testimonial">
-            <ChevronLeft className="h-12 w-12" />
+            className="absolute bottom-[10%] left-0 transform -translate-y-1/2 text-[#363636] cursor-pointer z-10 hover:text-[#f47c27] transition-colors hidden md:block"
+            aria-label="Previous testimonial ">
+            <ChevronLeft className="h-14 w-14" />
           </button>
           <button
             onClick={() => swiperRef2.current?.slideNext()}
-            className="absolute top-40 right-6 transform -translate-y-1/2 text-[#363636] cursor-pointer z-10 hover:text-[#f47c27] transition-colors"
-            aria-label="Next testimonial">
-            <ChevronRight className="h-12 w-12" />
+            className="absolute bottom-[10%] left-10 transform -translate-y-1/2 text-[#363636] cursor-pointer z-10 hover:text-[#f47c27] transition-colors hidden md:block"
+            aria-label="Next testimonial ">
+            <ChevronRight className="h-14 w-14" />
           </button>
         </div>
       </div>
