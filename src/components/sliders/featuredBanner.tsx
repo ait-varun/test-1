@@ -80,7 +80,7 @@ export default function FeaturedBanner() {
                 height={500}
                 src={product.src}
                 alt={product.heading}
-                className="w-[110vw] md:w-screen h-[70vh] md:h-[80vh] object-cover z-40"
+                className="w-[120vw] lg:w-screen h-[70vh] md:h-[80vh] object-cover z-40"
               />
             </SwiperSlide>
           ))}
