@@ -6,16 +6,16 @@ export default function WhyUs() {
     <>
       <section className="relative">
         <div className="whyChooseUs text-black">
-          <div className="pl-6 md:pl-32 flex flex-col justify-center gap-6 w-full pe-6 z-20">
+          <div className="pl-6 md:pl-16 flex flex-col justify-center gap-6 w-full pe-6 z-20">
             <h2 className="text-4xl font-extrabold beton-font">
               WHY CHOOSE US?
             </h2>
-            <p className="font-bold">
+            <p className="font-bold md:w-[70%]">
               Why waste time and energy making Bacon in the traditional way when
               you can simply use the Bacon Wizard to cook it within a few
               minutes in the Microwave!
             </p>
-            <p className="font-bold">
+            <p className="font-bold md:w-[70%]">
               Fat drips away from the bacon for less fat and healthier, crispier
               bacon every time! Cooks Up to a Full pound of bacon at a time.
               Bacon is cooked evenly and perfectly.

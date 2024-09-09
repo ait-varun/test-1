@@ -31,16 +31,16 @@ export default function Blogs() {
   ];
   return (
     <>
-      <section className="px-6 md:px-8 mb-56">
+      <section className="px-6 md:px-16 mb-56">
         <div className="flex justify-between items-center mb-8">
           <h1 className="beton-font text-4xl font-extrabold py-6">BLOGS</h1>
           <OrangeButton text="view all" />
         </div>
-        <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-56 md:gap-0">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-56 md:gap-4">
           {blogs.map((blog) => (
             <div
               key={blog.id}
-              className="flex flex-col gap-4 p-6 rounded-lg relative">
+              className="flex flex-col gap-4 rounded-lg relative">
               <Image
                 src={blog.src}
                 alt={blog.name}
@@ -48,7 +48,7 @@ export default function Blogs() {
                 height={500}
                 className="rounded-lg"
               />
-              <div className="rounded-3xl w-[70%] absolute -bottom-44 md:-bottom-52 xl:-bottom-40 left-[15%] bg-white p-6">
+              <div className="rounded-3xl w-[80%] absolute -bottom-48 md:-bottom-52 xl:-bottom-44 left-[10%] bg-white p-6">
                 <h2 className="text-xl font-bold beton-font">{blog.title}</h2>
                 <p className="text-base font-bold mb-6">{blog.description}</p>
                 <BlackButton text="read more" />
