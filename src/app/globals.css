@@ -105,13 +105,34 @@ body {
 /* swiper */
 
 .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  background-color: #363636;
-  opacity: 0.5;
-  margin: 0 5px;
+  width: 10px !important;
+  height: 10px !important;
+  background-color: #363636 !important;
+  opacity: 0.5 !important;
+  margin: 0 5px !important;
+  border-radius: 50% !important;
+  position: relative; /* To position the pseudo-element properly */
 }
+
+/* Active bullet styling with ring */
 .swiper-pagination-bullet-active {
-  opacity: 1;
-  background-color: #f47c27;
+  opacity: 1 !important;
+  background-color: #f47c27 !important;
+  position: relative;
 }
+
+.swiper-pagination-bullet-active::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 20px; /* Size slightly larger than the bullet */
+  height: 20px;
+  border: 2px solid #f47c27; /* Same color as the bullet */
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+
+
+
