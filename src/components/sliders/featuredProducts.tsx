@@ -8,37 +8,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
-
-const products = [
-  {
-    id: 1,
-    name: "Cook's Choice 2-In-1 Better Baker Edible Food Bowl & Mini Loaf Maker",
-    image: "/cooks_logo.png",
-    rating: 5,
-    reviews: 12,
-  },
-  {
-    id: 2,
-    name: "Cook's Choice 2-In-1 Better Baker Edible Food Bowl & Mini Loaf Maker",
-    image: "/cooks_logo.png",
-    rating: 5,
-    reviews: 12,
-  },
-  {
-    id: 3,
-    name: "Cook's Choice 2-In-1 Better Baker Edible Food Bowl & Mini Loaf Maker",
-    image: "/cooks_logo.png",
-    rating: 5,
-    reviews: 12,
-  },
-  {
-    id: 4,
-    name: "Cook's Choice 2-In-1 Better Baker Edible Food Bowl & Mini Loaf Maker",
-    image: "/cooks_logo.png",
-    rating: 5,
-    reviews: 12,
-  },
-];
+import featuredProducts from "@/data/products.json";
 
 export default function FeaturedProducts() {
   const colors = {
@@ -90,7 +60,7 @@ export default function FeaturedProducts() {
             },
           }}
           className="relative">
-          {products.map((product) => (
+          {featuredProducts.map((product) => (
             <SwiperSlide key={product.id}>
               <div className="bg-white p-4 rounded-lg shadow-md">
                 <Image
