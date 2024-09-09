@@ -109,17 +109,31 @@ export default function Testimonials() {
             className="">
             {testimonials.map((testimonial) => (
               <SwiperSlide key={testimonial.id}>
-                <div className="bg-white p-4 rounded-lg shadow-md">
-                  <Image
-                    width={300}
-                    height={200}
-                    src={testimonial.src}
-                    alt={testimonial.name}
-                    className="w-full h-auto mb-4"
-                  />
-                  <h3 className="font-bold mb-2">{testimonial.title}</h3>
-                  <p className="text-sm mb-2">{testimonial.comment}</p>
-                  <p className="text-sm font-semibold">{testimonial.name}</p>
+                <div className="bg-[#f6efea] p-6 rounded-3xl h-[52vh] text-center">
+                  <div className="flex items-center justify-center">
+                    <Image
+                      width={100}
+                      height={100}
+                      src={testimonial.src}
+                      alt={testimonial.name}
+                      className="w-32 h-auto mb-4"
+                    />
+                  </div>
+                  <h3 className="font-bold mb-2 beton-font text-xl">
+                    {testimonial.title}
+                  </h3>
+                  <div className="flex justify-center mb-2">
+                    {[...Array(5)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className="w-4 h-4 text-orange-400 fill-current"
+                      />
+                    ))}
+                  </div>
+                  <p className="mb-2 text-base">{testimonial.comment}</p>
+                  <p className="text-2xl permanent-marker font-semibold text-[#f47c27]">
+                    — {testimonial.name}
+                  </p>
                 </div>
               </SwiperSlide>
             ))}
