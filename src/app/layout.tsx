@@ -13,17 +13,6 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-const openSansCondensedRegular = localFont({
-  src: "./fonts/BetonCGExtraBoldRegular.woff",
-  variable: "--font-open-sans-condensed",
-  weight: "100 700 900",
-});
-
-const betonFont = localFont({
-  src: "./fonts/BetonCGExtraBoldRegular.woff",
-  variable: "--font-beton-cg-extra-bold",
-  weight: "100 700 900",
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -38,8 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${openSansCondensedRegular.variable}
-        ${betonFont.variable} antialiased`}>
+        className={`${geistSans.variable} ${geistMono.variable}  antialiased`}>
         {children}
       </body>
     </html>

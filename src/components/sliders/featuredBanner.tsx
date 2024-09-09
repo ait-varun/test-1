@@ -8,9 +8,38 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
+import OrangeButton from "../common/orangeButton";
 
 export default function FeaturedBanner() {
-  const featuredImages = ["/cook_1.jpg", "/cook_2.jpg", "/cook_3.jpg"];
+  const featuredImages = [
+    {
+      id: 1,
+      src: "/dish_1.jpg",
+      heading: "Revolutionize Your",
+      subHeading: "Cooking Experience",
+      quote: "with Cook’s Choice Unique Cookware",
+      description:
+        "The original Better Baker edible food bowl and mini muffin maker.",
+    },
+    {
+      id: 2,
+      src: "/cook_2.jpg",
+      heading: "Revolutionize Your",
+      subHeading: "Cooking Experience",
+      quote: "with Cook’s Choice Unique Cookware",
+      description:
+        "The original Better Baker edible food bowl and mini muffin maker.",
+    },
+    {
+      id: 3,
+      src: "/cook_3.jpg",
+      heading: "Revolutionize Your",
+      subHeading: "Cooking Experience",
+      quote: "with Cook’s Choice Unique Cookware",
+      description:
+        "The original Better Baker edible food bowl and mini muffin maker.",
+    },
+  ];
   const swiperRef1 = useRef<SwiperType | null>(null);
 
   return (
@@ -31,17 +60,28 @@ export default function FeaturedBanner() {
             bulletActiveClass: "swiper-pagination1-bullet-active",
           }}
           className="relative">
-          {featuredImages.map((product, index) => (
-            <SwiperSlide key={index}>
-              <div className="">
-                <Image
-                  width={500}
-                  height={500}
-                  src={product}
-                  alt={product}
-                  className="w-screen h-[80vh]"
-                />
+          {featuredImages.map((product) => (
+            <SwiperSlide key={product.id}>
+              <div className="absolute transform -translate-y-1/2 left-0 right-0 top-1/2 md:top-60 z-50  text-center space-y-6">
+                <h1 className="text-center font-extrabold text-4xl beton-font">
+                  {product.heading.toUpperCase()} <br />
+                  <span className="text-[#f47c27]">
+                    {product.subHeading.toUpperCase()}
+                  </span>
+                </h1>
+                <span className="block permanent-marker">
+                  {product.quote.toUpperCase()}
+                </span>
+                <p className="text-lg">{product.description}</p>
+                <OrangeButton text="shop now" />
               </div>
+              <Image
+                width={500}
+                height={500}
+                src={product.src}
+                alt={product.heading}
+                className="w-screen h-[80vh] object-cover z-40"
+              />
             </SwiperSlide>
           ))}
         </Swiper>

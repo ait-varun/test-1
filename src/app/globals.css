@@ -2,7 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+@font-face {
+  font-family: "Permanent Marker";
+  src: url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"),
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Beton CG ExtraBold";
+  src: url("./fonts/beton-cg-extrabold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans Condensed";
+  src: url("./fonts/OpenSans-CondBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --background: #363636;
@@ -11,14 +36,16 @@
   --light-color: #f8e9b7;
 }
 
+body {
+  font-family: "Open Sans Condensed";
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #363636;
     --foreground: #fbf7e9;
   }
 }
-
-
 
 @layer utilities {
   .text-balance {
@@ -91,12 +118,13 @@
   }
 }
 
-.open-sans {
-  font-family: --font-open-sans-condensed;
+.beton-font {
+  font-family: "Beton CG ExtraBold";
 }
 
-.beton-font {
-  font-family: --font-beton-cg-extra-bold;
+.permanent-marker {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
 }
 
 /* swiper */
@@ -121,7 +149,7 @@
 
 .swiper-pagination1-bullet-active::after {
   /* z-index: 9999; */
-  content: '';
+  content: "";
   position: absolute;
   top: -80px;
   left: 50vw;
@@ -150,7 +178,7 @@
 }
 
 .swiper-pagination-bullet-active::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -5px;
   left: -5px;
@@ -163,7 +191,7 @@
 
 /* why us */
 
-.whyChooseUs{
+.whyChooseUs {
   background-image: url("../assets/images/why_us.jpg");
   background-size: cover;
   background-position: center;
