@@ -15,7 +15,7 @@ export default function Footer() {
           />
           <div className="text-black">
             <h3 className="font-bold mb-2">SUBSCRIBE OUR NEWSLETTER</h3>
-            <div className="flex relative w-80 md:w-96">
+            <div className="flex relative w-80">
               <input
                 type="email"
                 placeholder="example@example.com"
