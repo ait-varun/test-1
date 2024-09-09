@@ -64,7 +64,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="container mx-auto px-4 py-8 relative">
+    <section className="container mx-auto px-6 md:px-16 py-8 relative">
       <div className="flex flex-col md:flex-row md:space-x-8">
         <div className="md:w-1/4 mb-8 md:mb-0">
           <h2 className="text-4xl font-extrabold beton-font mb-4">
@@ -140,13 +140,13 @@ export default function Testimonials() {
           </Swiper>
           <button
             onClick={() => swiperRef2.current?.slidePrev()}
-            className="absolute bottom-[10%] left-0 transform -translate-y-1/2 text-[#363636] cursor-pointer z-10 hover:text-[#f47c27] transition-colors hidden md:block"
+            className="absolute bottom-[10%] left-10 transform -translate-y-1/2 text-[#363636] cursor-pointer z-10 hover:text-[#f47c27] transition-colors hidden md:block"
             aria-label="Previous testimonial ">
             <ChevronLeft className="h-14 w-14" />
           </button>
           <button
             onClick={() => swiperRef2.current?.slideNext()}
-            className="absolute bottom-[10%] left-10 transform -translate-y-1/2 text-[#363636] cursor-pointer z-10 hover:text-[#f47c27] transition-colors hidden md:block"
+            className="absolute bottom-[10%] left-20 transform -translate-y-1/2 text-[#363636] cursor-pointer z-10 hover:text-[#f47c27] transition-colors hidden md:block"
             aria-label="Next testimonial ">
             <ChevronRight className="h-14 w-14" />
           </button>

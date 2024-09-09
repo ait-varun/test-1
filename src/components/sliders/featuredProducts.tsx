@@ -24,7 +24,7 @@ export default function FeaturedProducts() {
 
   return (
     <section
-      className="py-12 px-4 md:px-8 relative"
+      className="py-12 px-6 md:px-16x relative"
       style={{ backgroundColor: colors.offWhite }}>
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-8">
