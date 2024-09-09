@@ -1,3 +1,4 @@
+import Blogs from "@/components/blogs";
 import InstaPosts from "@/components/instaPosts";
 import Footer from "@/components/layout/footer";
 import Navbar from "@/components/layout/navbar";
@@ -12,6 +13,7 @@ export default function Home() {
       <FeaturedBanner />
       <FeaturedProducts />
       <WhyUs />
+      <Blogs />
       <InstaPosts />
       <Footer />
     </>
