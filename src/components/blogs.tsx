@@ -31,12 +31,12 @@ export default function Blogs() {
   ];
   return (
     <>
-      <section className="container mx-auto h-screen">
+      <section className="px-6 md:px-8 mb-56">
         <div className="flex justify-between items-center mb-8">
           <h1 className="beton-font text-4xl font-extrabold py-6">BLOGS</h1>
           <OrangeButton text="view all" />
         </div>
-        <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-56 md:gap-0">
           {blogs.map((blog) => (
             <div
               key={blog.id}
@@ -48,9 +48,9 @@ export default function Blogs() {
                 height={500}
                 className="rounded-lg"
               />
-              <div className="rounded-lg w-56 absolute -bottom-10 left-1/4 bg-white">
-                <h2 className="text-xl font-bold">{blog.title}</h2>
-                <p className="text-sm">{blog.description}</p>
+              <div className="rounded-3xl w-[70%] absolute -bottom-44 md:-bottom-52 xl:-bottom-40 left-[15%] bg-white p-6">
+                <h2 className="text-xl font-bold beton-font">{blog.title}</h2>
+                <p className="text-base font-bold mb-6">{blog.description}</p>
                 <BlackButton text="read more" />
               </div>
             </div>
