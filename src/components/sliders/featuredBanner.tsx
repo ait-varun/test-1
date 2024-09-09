@@ -59,20 +59,20 @@ export default function FeaturedBanner() {
             bulletClass: "swiper-pagination1-bullet",
             bulletActiveClass: "swiper-pagination1-bullet-active",
           }}
-          className="relative">
+          className="">
           {featuredImages.map((product) => (
             <SwiperSlide key={product.id}>
-              <div className="absolute transform -translate-y-1/2 left-0 right-0 top-1/2 md:top-60 z-50  text-center space-y-6">
-                <h1 className="text-center font-extrabold text-4xl beton-font">
+              <div className="absolute transform -translate-y-1/2 left-0 right-0 top-1/2 md:top-1/3 z-50  text-center space-y-2">
+                <h1 className="text-center font-extrabold text-3xl md:text-5xl beton-font">
                   {product.heading.toUpperCase()} <br />
                   <span className="text-[#f47c27]">
                     {product.subHeading.toUpperCase()}
                   </span>
                 </h1>
-                <span className="block permanent-marker">
+                <span className="block permanent-marker text-lg md:text-xl">
                   {product.quote.toUpperCase()}
                 </span>
-                <p className="text-lg">{product.description}</p>
+                <p className="text-xl">{product.description}</p>
                 <OrangeButton text="shop now" />
               </div>
               <Image
@@ -80,7 +80,7 @@ export default function FeaturedBanner() {
                 height={500}
                 src={product.src}
                 alt={product.heading}
-                className="w-screen h-[80vh] object-cover z-40"
+                className="w-[110vw] md:w-screen h-[70vh] md:h-[80vh] object-cover z-40"
               />
             </SwiperSlide>
           ))}
