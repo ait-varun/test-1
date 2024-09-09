@@ -129,3 +129,14 @@
   box-sizing: border-box;
 }
 
+/* why us */
+
+.whyChooseUs{
+  background-image: url("../assets/images/why_us.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
