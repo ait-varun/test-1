@@ -21,7 +21,6 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
@@ -97,5 +96,5 @@ body {
 
 
 .open-sans {
-   font-family: "Open Sans", sans-serif;
+   font-family: 'Open Sans', sans-serif;
 }

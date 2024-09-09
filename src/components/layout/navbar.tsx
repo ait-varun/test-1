@@ -22,7 +22,7 @@ export default function Navbar() {
   const swiperRef = useRef<SwiperType | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const navItems = ["HOME", "SHOP", "ABOUT US", "BLOG", "Original"];
+  const navItems = ["HOME", "SHOP", "ABOUT US", "BLOG", "CONTACT"];
 
   return (
     <header className="w-full">
