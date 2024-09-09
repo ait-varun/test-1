@@ -13,8 +13,8 @@ export default function Footer() {
             width={150}
             height={50}
           />
-          <div>
-            <h3 className="font-semibold mb-2">SUBSCRIBE OUR NEWSLETTER</h3>
+          <div className="text-black">
+            <h3 className="font-bold mb-2">SUBSCRIBE OUR NEWSLETTER</h3>
             <div className="flex relative">
               <input
                 type="email"
@@ -49,11 +49,11 @@ export default function Footer() {
         {/* Quick Links, Collections, Contact Us */}
         <div className="grid grid-cols-2 md:grid-cols-3  gap-8 text-left bg-[#EFEBE8] text-black p-6 md:col-span-3 px-12">
           <div>
-            <h3 className="font-extrabold mb-4 ">QUICK LINKS</h3>
+            <h3 className="font-bold mb-4 ">QUICK LINKS</h3>
             <ul className="space-y-2">
               {["Home", "Shop", "Services", "About", "FAQ", "Contact"].map(
                 (item) => (
-                  <li key={item} className="font-bold">
+                  <li key={item} className="font-semibold">
                     <a href="#" className="hover:text-orange-500">
                       {item}
                     </a>
@@ -63,10 +63,10 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="font-extrabold mb-4">COLLECTIONS</h3>
+            <h3 className="font-bold mb-4">COLLECTIONS</h3>
             <ul className="space-y-2">
               {[1, 2, 3, 4, 5].map((num) => (
-                <li key={num} className="font-bold">
+                <li key={num} className="font-semibold">
                   <a href="#" className="hover:text-orange-500">
                     CATEGORIES {num}
                   </a>
@@ -74,10 +74,10 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-          <div className=" ml-none md:ml-10">
-            <h3 className="font-extrabold mb-4">CONTACT US</h3>
-            <ul className="space-y-4 font-bold">
-              <li className="flex items-center">
+          <div className=" ml-none md:ml-10 flex flex-col gap-4">
+            <h3 className="font-bold">CONTACT US</h3>
+            <ul className="space-y-4 font-semibold">
+              <li className="flex gap-2 items-center">
                 <span className="bg-orange-500 p-2 rounded-full mr-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -99,9 +99,7 @@ export default function Footer() {
                     />
                   </svg>
                 </span>
-                112 Address Street No.122
-                <br />
-                USA, 11222
+                112&nbsp;Address&nbsp;Street&nbsp;No.122 USA,&nbsp;11222
               </li>
               <li className="flex items-center">
                 <span className="bg-orange-500 p-2 rounded-full mr-2">
