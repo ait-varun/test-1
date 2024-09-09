@@ -9,7 +9,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
 import featuredProducts from "@/data/products.json";
-import FeaturedButton from "../common/featuredButton";
+import BlackButton from "../common/blackButton";
+import OrangeButton from "../common/orangeButton";
 
 export default function FeaturedProducts() {
   const swiperRef = useRef<SwiperType | null>(null);
@@ -32,12 +33,7 @@ export default function FeaturedProducts() {
             style={{ color: colors.darkGray }}>
             FEATURED PRODUCTS
           </h2>
-          <FeaturedButton
-            bgColor={colors.orange}
-            bgHover={colors.organeHover}
-            textColor={colors.offWhite}
-            text="view all"
-          />
+          <OrangeButton text="view all" />
         </div>
         <div className="relative">
           <Swiper
@@ -96,12 +92,7 @@ export default function FeaturedProducts() {
                       ({product.reviews} Reviews)
                     </span>
                   </div>
-                  <FeaturedButton
-                    bgColor={colors.offWhite}
-                    bgHover={colors.offWhite}
-                    textColor={colors.darkGray}
-                    text="add to cart"
-                  />
+                  <BlackButton text="add to cart" />
                 </div>
               </SwiperSlide>
             ))}
