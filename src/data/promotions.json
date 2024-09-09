@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Spring Sale",
+    "description": "Up to 40% off sitewide",
+    "cta": "Shop Now"
+  },
+  {
+    "title": "New Arrivals",
+    "description": "Check out our latest cookware collection",
+    "cta": "Explore"
+  },
+  {
+    "title": "Cooking Classes",
+    "description": "Join our online cooking workshops",
+    "cta": "Learn More"
+  }
+]
