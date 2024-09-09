@@ -38,7 +38,7 @@ export default function Navbar() {
           {promotions.map((promo, index) => (
             <SwiperSlide key={index}>
               <div className="flex items-center justify-center h-full">
-                <p className="text-sm md:text-base text-center mx-10 md:mx-0">
+                <p className="text-xs text-center mx-10 md:mx-0">
                   {promo.title} | {promo.description}{" "}
                   <span className="text-[#f47c27] underline cursor-pointer">
                     {promo.cta}
