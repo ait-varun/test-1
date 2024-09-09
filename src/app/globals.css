@@ -101,11 +101,42 @@
 
 /* swiper */
 
+.swiper-pagination1-bullet {
+  color: #000000;
+  width: 10px !important;
+  height: 10px !important;
+  background-color: #000000 !important;
+  opacity: 1 !important;
+  margin: 0 5px !important;
+  border-radius: 50% !important;
+  position: relative; /* To position the pseudo-element properly */
+}
+
+/* Active bullet styling with ring */
+.swiper-pagination1-bullet-active {
+  opacity: 1 !important;
+  background-color: #000000 !important;
+  position: relative !important;
+}
+
+.swiper-pagination1-bullet-active::after {
+  /* z-index: 9999; */
+  content: '';
+  position: absolute;
+  top: -80px;
+  left: 50vw;
+  width: 20px; /* Size slightly larger than the bullet */
+  height: 20px;
+  border: 2px solid #000000; /* Same color as the bullet */
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
 .swiper-pagination-bullet {
   width: 10px !important;
   height: 10px !important;
   background-color: #000000 !important;
-  opacity: 0.5 !important;
+  opacity: 0.8 !important;
   margin: 0 5px !important;
   border-radius: 50% !important;
   position: relative; /* To position the pseudo-element properly */
