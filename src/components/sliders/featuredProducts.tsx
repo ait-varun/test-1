@@ -9,6 +9,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
 import featuredProducts from "@/data/products.json";
+import FeaturedButton from "../common/featuredButton";
 
 export default function FeaturedProducts() {
   const swiperRef = useRef<SwiperType | null>(null);
@@ -16,6 +17,7 @@ export default function FeaturedProducts() {
   const colors = {
     darkGray: "#363636",
     orange: "#f47c27",
+    organeHover: "#e16d1e",
     offWhite: "#fbf7e9",
   };
 
@@ -30,12 +32,12 @@ export default function FeaturedProducts() {
             style={{ color: colors.darkGray }}>
             FEATURED PRODUCTS
           </h2>
-          <div className="relative inline-block group">
-            <button className="relative z-10 bg-[#f47c27] text-white text-xs md:text-base font-bold py-3 px-6 rounded-lg hover:bg-[#e16d1e] transition duration-300 ease-in-out transform group-hover:translate-x-[-2px] group-hover:translate-y-[-2px] uppercase tracking-wide">
-              View All
-            </button>
-            <div className="absolute inset-0 bg-[#363636] rounded-lg transition-all duration-300 ease-in-out transform translate-x-[4px] translate-y-[4px] group-hover:translate-x-[6px] group-hover:translate-y-[6px]"></div>
-          </div>
+          <FeaturedButton
+            bgColor={colors.orange}
+            bgHover={colors.organeHover}
+            textColor={colors.offWhite}
+            text="view all"
+          />
         </div>
         <div className="relative">
           <Swiper
@@ -94,12 +96,12 @@ export default function FeaturedProducts() {
                       ({product.reviews} Reviews)
                     </span>
                   </div>
-                  <div className="relative inline-block group">
-                    <button className="relative z-10 bg-[#fbf7e9] text-[#363636] text-xs md:text-base font-bold py-3 px-6 rounded-lg hover:bg-[#fdfbf2] transition duration-300 ease-in-out transform group-hover:translate-x-[-2px] group-hover:translate-y-[-2px] uppercase tracking-wide">
-                      ADD TO CART
-                    </button>
-                    <div className="absolute inset-0 bg-[#363636] rounded-lg transition-all duration-300 ease-in-out transform translate-x-[4px] translate-y-[4px] group-hover:translate-x-[6px] group-hover:translate-y-[6px]"></div>
-                  </div>
+                  <FeaturedButton
+                    bgColor={colors.offWhite}
+                    bgHover={colors.offWhite}
+                    textColor={colors.darkGray}
+                    text="add to cart"
+                  />
                 </div>
               </SwiperSlide>
             ))}
