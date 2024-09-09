@@ -30,7 +30,7 @@ export default function Footer() {
               />
             </div>
           </div>
-          <div className="flex space-x-4 w-96">
+          <div className="flex space-x-4">
             <a href="#" className="bg-orange-500 p-2 rounded-full">
               <Facebook size={20} color="white" />
             </a>
