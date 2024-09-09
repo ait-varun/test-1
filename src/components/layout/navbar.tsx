@@ -81,7 +81,7 @@ export default function Navbar() {
             <a
               key={item}
               href="#"
-              className="block mt-4 md:inline-block md:mt-0 mr-4 text-[#363636] hover:text-[#f47c27] font-bold">
+              className="block mt-4 md:inline-block md:mt-0 mr-4 text-[#363636] hover:text-[#f47c27] font-bold text-base">
               {item}
             </a>
           ))}
