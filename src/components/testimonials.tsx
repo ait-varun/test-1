@@ -109,7 +109,7 @@ export default function Testimonials() {
             className="">
             {testimonials.map((testimonial) => (
               <SwiperSlide key={testimonial.id}>
-                <div className="bg-[#f6efea] p-6 rounded-3xl text-center">
+                <div className="bg-[#f6efea] p-6 rounded-3xl text-center relative z-50">
                   <div className="flex items-center justify-center">
                     <Image
                       width={100}
@@ -134,6 +134,20 @@ export default function Testimonials() {
                   <p className="text-2xl permanent-marker font-semibold text-[#f47c27]">
                     — {testimonial.name}
                   </p>
+                  <Image
+                    src={"/quotes_orange.png"}
+                    alt="quote"
+                    width={30}
+                    height={30}
+                    className="absolute top-8 left-8"
+                  />
+                  <Image
+                    src={"/quotes_trans.png"}
+                    alt="quote"
+                    width={30}
+                    height={30}
+                    className="absolute bottom-8 right-8"
+                  />
                 </div>
               </SwiperSlide>
             ))}
