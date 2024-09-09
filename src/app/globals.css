@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 :root {
   --background: #363636;
   --foreground: #fbf7e9;
   --medium-color: #f47c27;
-  --light-color:#f8e9b7;
+  --light-color: #f8e9b7;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -94,11 +94,24 @@ body {
   }
 }
 
-
 .open-sans {
-   font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .beton-font {
   font-family: --font-beton-cg-extra-bold;
+}
+
+/* swiper */
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #363636;
+  opacity: 0.5;
+  margin: 0 5px;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: #f47c27;
 }
