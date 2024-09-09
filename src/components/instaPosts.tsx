@@ -21,7 +21,7 @@ export default function InstaPosts() {
                   width={100}
                   height={100}
                   alt={`insta-image-${index}`}
-                  className="w-full h-auto object-cover"
+                  className="w-full h-auto object-cover border-white border"
                 />
               </div>
             );
