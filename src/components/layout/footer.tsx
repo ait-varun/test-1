@@ -6,16 +6,16 @@ export default function Footer() {
     <footer>
       <div className="grid grid-cols-1 md:grid-cols-5 gap-0">
         {/* Subscribe Newsletter */}
-        <div className="space-y-6 flex justify-center flex-col items-center bg-[#D6D1CE] p-6 md:col-span-2 py-12">
+        <div className="space-y-6 ps-10 md:ps-32 flex justify-center flex-col items-left bg-[#D6D1CE] md:col-span-2 py-12">
           <Image
             src="/cooks_logo.png"
             alt="Cook's Choice"
             width={150}
-            height={50}
+            height={100}
           />
           <div className="text-black">
             <h3 className="font-bold mb-2">SUBSCRIBE OUR NEWSLETTER</h3>
-            <div className="flex relative">
+            <div className="flex relative w-80 md:w-96">
               <input
                 type="email"
                 placeholder="example@example.com"
@@ -30,7 +30,7 @@ export default function Footer() {
               />
             </div>
           </div>
-          <div className="flex space-x-4">
+          <div className="flex space-x-4 w-96">
             <a href="#" className="bg-orange-500 p-2 rounded-full">
               <Facebook size={20} color="white" />
             </a>
@@ -47,7 +47,7 @@ export default function Footer() {
         </div>
 
         {/* Quick Links, Collections, Contact Us */}
-        <div className="grid grid-cols-2 md:grid-cols-3  gap-8 text-left bg-[#EFEBE8] text-black p-6 md:col-span-3 px-12">
+        <div className="grid grid-cols-2 md:grid-cols-3  gap-8 text-left bg-[#EFEBE8] text-black p-6 md:col-span-3 py-12 px-12">
           <div>
             <h3 className="font-bold mb-4 ">QUICK LINKS</h3>
             <ul className="space-y-2">
@@ -74,7 +74,7 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-          <div className=" ml-none md:ml-10 flex flex-col gap-4">
+          <div className="ml-none md:ml-10 flex flex-col gap-4">
             <h3 className="font-bold">CONTACT US</h3>
             <ul className="space-y-4 font-semibold">
               <li className="flex gap-2 items-center">
