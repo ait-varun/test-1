@@ -22,7 +22,7 @@ export default function Navbar() {
   const swiperRef = useRef<SwiperType | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const navItems = ["HOME", "SHOP", "ABOUT US", "CONTACT"];
+  const navItems = ["HOME", "SHOP", "ABOUT US", "BLOG", "Original"];
 
   return (
     <header className="w-full">
@@ -69,7 +69,7 @@ export default function Navbar() {
           <Image
             src="/cooks_logo.png"
             alt="Cook's Choice Logo"
-            className="h-10"
+            className="w-40"
             width={100}
             height={100}
           />
@@ -81,7 +81,7 @@ export default function Navbar() {
             <a
               key={item}
               href="#"
-              className="block mt-4 md:inline-block md:mt-0 mr-4 text-[#363636] hover:text-[#f47c27] font-bold">
+              className="block mt-4 md:inline-block md:mt-0 mr-4 text-[#363636] hover:text-[#f47c27] font-bold open-sans">
               {item}
             </a>
           ))}
