@@ -6,7 +6,7 @@ export default function WhyUs() {
     <>
       <section className="relative">
         <div className="whyChooseUs text-black">
-          <div className="pl-6 md:ml-32 flex flex-col justify-center gap-6 w-full pe-6 z-20">
+          <div className="pl-6 md:pl-32 flex flex-col justify-center gap-6 w-full pe-6 z-20">
             <h2 className="text-4xl font-extrabold beton-font">
               WHY CHOOSE US?
             </h2>

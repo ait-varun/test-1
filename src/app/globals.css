@@ -36,6 +36,9 @@
   --light-color: #f8e9b7;
 }
 
+*{
+  border: 1px solid red;
+}
 
 body {
   font-family: "Open Sans Condensed";

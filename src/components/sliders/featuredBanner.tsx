@@ -72,7 +72,7 @@ export default function FeaturedBanner() {
                 <span className="block permanent-marker text-lg md:text-xl">
                   {product.quote.toUpperCase()}
                 </span>
-                <p className="text-xl">{product.description}</p>
+                <p className="text-xl px-2 md:px-0">{product.description}</p>
                 <OrangeButton text="shop now" />
               </div>
               <Image
