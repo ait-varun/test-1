@@ -30,13 +30,13 @@ export default function WhyUs() {
           </div>
         </div>
         <div className="hidden md:flex absolute top-0 md:top-32 right-0  flex-col gap-2 md:gap-6 text-white z-10">
-          <span className="bg-[#f47c27] rounded-l-full py-4 px-6 font-bold text-xl">
+          <span className="bg-[#f47c27] rounded-l-full py-6 px-14 font-bold text-2xl">
             40% LESS FAT
           </span>
-          <span className="bg-[#f47c27] rounded-l-full py-4 px-6 font-bold text-xl">
+          <span className="bg-[#f47c27] rounded-l-full py-6 px-14 font-bold text-2xl">
             PERFECT SIZE
           </span>
-          <span className="bg-[#f47c27] rounded-l-full py-4 px-6 font-bold text-xl">
+          <span className="bg-[#f47c27] rounded-l-full py-6 px-14 font-bold text-2xl">
             EASY CLEAN UP
           </span>
         </div>
