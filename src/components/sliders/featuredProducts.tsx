@@ -26,12 +26,12 @@ export default function FeaturedProducts() {
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-8">
           <h2
-            className="text-3xl md:text-4xl font-extrabold beton-font"
+            className="text-xl md:text-4xl font-extrabold beton-font"
             style={{ color: colors.darkGray }}>
             FEATURED PRODUCTS
           </h2>
           <div className="relative inline-block group">
-            <button className="relative z-10 bg-[#f47c27] text-white font-bold py-3 px-6 rounded-lg hover:bg-[#e16d1e] transition duration-300 ease-in-out transform group-hover:translate-x-[-2px] group-hover:translate-y-[-2px] uppercase tracking-wide">
+            <button className="relative z-10 bg-[#f47c27] text-white text-xs md:text-base font-bold py-3 px-6 rounded-lg hover:bg-[#e16d1e] transition duration-300 ease-in-out transform group-hover:translate-x-[-2px] group-hover:translate-y-[-2px] uppercase tracking-wide">
               View All
             </button>
             <div className="absolute inset-0 bg-[#363636] rounded-lg transition-all duration-300 ease-in-out transform translate-x-[4px] translate-y-[4px] group-hover:translate-x-[6px] group-hover:translate-y-[6px]"></div>
@@ -95,7 +95,7 @@ export default function FeaturedProducts() {
                     </span>
                   </div>
                   <div className="relative inline-block group">
-                    <button className="relative z-10 bg-[#fbf7e9] text-[#363636] font-bold py-3 px-6 rounded-lg hover:bg-[#fdfbf2] transition duration-300 ease-in-out transform group-hover:translate-x-[-2px] group-hover:translate-y-[-2px] uppercase tracking-wide">
+                    <button className="relative z-10 bg-[#fbf7e9] text-[#363636] text-xs md:text-base font-bold py-3 px-6 rounded-lg hover:bg-[#fdfbf2] transition duration-300 ease-in-out transform group-hover:translate-x-[-2px] group-hover:translate-y-[-2px] uppercase tracking-wide">
                       ADD TO CART
                     </button>
                     <div className="absolute inset-0 bg-[#363636] rounded-lg transition-all duration-300 ease-in-out transform translate-x-[4px] translate-y-[4px] group-hover:translate-x-[6px] group-hover:translate-y-[6px]"></div>
