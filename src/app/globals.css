@@ -29,6 +29,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Open Sans Condensed Italic";
+  src: url("./fonts/OpenSans-CondLightItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: #363636;
   --foreground: #fbf7e9;
@@ -117,6 +125,10 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.open-sans-italic {
+  font-family: "Open Sans Condensed Italic";
 }
 
 .beton-font {
