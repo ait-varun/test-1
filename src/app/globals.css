@@ -19,6 +19,7 @@
 }
 
 
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -91,7 +92,7 @@
 }
 
 .open-sans {
-  font-family: "Open Sans", sans-serif;
+  font-family: --font-open-sans-condensed;
 }
 
 .beton-font {

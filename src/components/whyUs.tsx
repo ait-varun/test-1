@@ -6,7 +6,7 @@ export default function WhyUs() {
     <>
       <section className="whyChooseUs text-black">
         <div className="ml-32 flex flex-col justify-center gap-6 w-[35vw]">
-          <h2 className="text-4xl font-extrabold">WHY CHOOSE US?</h2>
+          <h2 className="text-4xl font-extrabold beton-font">WHY CHOOSE US?</h2>
           <p className="font-bold">
             Why waste time and energy making Bacon in the traditional way when
             you can simply use the Bacon Wizard to cook it within a few minutes

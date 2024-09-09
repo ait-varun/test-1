@@ -5,7 +5,7 @@ import "./globals.css";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
-  weight: "100 900",
+  weight: "100 700 900",
 });
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
@@ -14,13 +14,8 @@ const geistMono = localFont({
 });
 
 const openSansCondensedRegular = localFont({
-  src: "./fonts/EncodeSansCondensed-Regular.ttf",
+  src: "./fonts/BetonCGExtraBoldRegular.woff",
   variable: "--font-open-sans-condensed",
-  weight: "100 700 900",
-});
-const openSansCondensedBold = localFont({
-  src: "./fonts/EncodeSansCondensed-Bold.ttf",
-  variable: "--font-open-sans-condensed-Bold",
   weight: "100 700 900",
 });
 
@@ -43,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${openSansCondensedRegular.variable} ${openSansCondensedBold.variable}
+        className={`${geistSans.variable} ${geistMono.variable} ${openSansCondensedRegular.variable}
         ${betonFont.variable} antialiased`}>
         {children}
       </body>
