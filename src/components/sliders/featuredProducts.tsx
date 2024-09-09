@@ -99,13 +99,13 @@ export default function FeaturedProducts() {
           </Swiper>
           <button
             onClick={() => swiperRef.current?.slidePrev()}
-            className="absolute -left-4 md:-left-14 top-1/2 transform -translate-y-1/2 text-[#363636] cursor-pointer z-10 hover:text-[#f47c27] transition-colors"
+            className="absolute -left-4 lg:-left-8 top-1/2 transform -translate-y-1/2 text-[#363636] cursor-pointer z-10 hover:text-[#f47c27] transition-colors"
             aria-label="Previous product">
             <ChevronLeft className="h-14 w-14" />
           </button>
           <button
             onClick={() => swiperRef.current?.slideNext()}
-            className="absolute -right-4 md:-right-14 top-1/2 transform -translate-y-1/2 text-[#363636] cursor-pointer z-10 hover:text-[#f47c27] transition-colors"
+            className="absolute -right-4 lg:-right-8 top-1/2 transform -translate-y-1/2 text-[#363636] cursor-pointer z-10 hover:text-[#f47c27] transition-colors"
             aria-label="Next product">
             <ChevronRight className="font-thin h-14 w-14" />
           </button>

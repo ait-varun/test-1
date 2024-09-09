@@ -4,9 +4,9 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer>
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-0">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-0">
         {/* Subscribe Newsletter */}
-        <div className="space-y-6 ps-10 lg:ps-32 flex justify-center flex-col items-left bg-[#D6D1CE] md:col-span-2 py-12">
+        <div className="space-y-6 ps-8 lg:ps-32 flex justify-center flex-col items-left bg-[#D6D1CE] md:col-span-2 py-12">
           <Image
             src="/cooks_logo.png"
             alt="Cook's Choice"
@@ -15,7 +15,7 @@ export default function Footer() {
           />
           <div className="text-black">
             <h3 className="font-bold mb-2">SUBSCRIBE OUR NEWSLETTER</h3>
-            <div className="flex relative w-80">
+            <div className="flex relative pe-6">
               <input
                 type="email"
                 placeholder="example@example.com"
@@ -26,7 +26,7 @@ export default function Footer() {
                 alt="email-icon"
                 width={20}
                 height={20}
-                className="absolute right-0 top-1/2 transform -translate-y-1/2 -translate-x-2 rounded-3xl"
+                className="absolute right-10 top-1/2 transform -translate-y-1/2 -translate-x-2 rounded-3xl"
               />
             </div>
           </div>
@@ -78,7 +78,7 @@ export default function Footer() {
             <h3 className="font-bold">CONTACT US</h3>
             <ul className="space-y-4 font-semibold">
               <li className="flex gap-2 items-center">
-                <span className="bg-orange-500 p-2 rounded-full mr-2">
+                <span className="bg-orange-500 p-2 rounded-full">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -99,7 +99,7 @@ export default function Footer() {
                     />
                   </svg>
                 </span>
-                112&nbsp;Address&nbsp;Street&nbsp;No.122 USA,&nbsp;11222
+                112&nbsp;Address Street&nbsp;No.122 USA,&nbsp;11222
               </li>
               <li className="flex items-center">
                 <span className="bg-orange-500 p-2 rounded-full mr-2">
