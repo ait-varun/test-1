@@ -3,44 +3,16 @@ import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import type { Swiper as SwiperType } from "swiper";
+import type { Swiper as featuredBannerSwiper } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
 import OrangeButton from "../common/orangeButton";
+import featuredImages from "@/data/featuredImages.json";
 
 export default function FeaturedBanner() {
-  const featuredImages = [
-    {
-      id: 1,
-      src: "/dish_1.jpg",
-      heading: "Revolutionize Your",
-      subHeading: "Cooking Experience",
-      quote: "with Cook’s Choice Unique Cookware",
-      description:
-        "The original Better Baker edible food bowl and mini muffin maker.",
-    },
-    {
-      id: 2,
-      src: "/cook_2.jpg",
-      heading: "Revolutionize Your",
-      subHeading: "Cooking Experience",
-      quote: "with Cook’s Choice Unique Cookware",
-      description:
-        "The original Better Baker edible food bowl and mini muffin maker.",
-    },
-    {
-      id: 3,
-      src: "/cook_3.jpg",
-      heading: "Revolutionize Your",
-      subHeading: "Cooking Experience",
-      quote: "with Cook’s Choice Unique Cookware",
-      description:
-        "The original Better Baker edible food bowl and mini muffin maker.",
-    },
-  ];
-  const swiperRef1 = useRef<SwiperType | null>(null);
+  const featuredBannerSwiperRef = useRef<featuredBannerSwiper | null>(null);
 
   return (
     <>
@@ -51,7 +23,7 @@ export default function FeaturedBanner() {
           slidesPerView={1}
           loop={true}
           onSwiper={(swiper) => {
-            swiperRef1.current = swiper;
+            featuredBannerSwiperRef.current = swiper;
           }}
           pagination={{
             clickable: true,
@@ -86,13 +58,13 @@ export default function FeaturedBanner() {
           ))}
         </Swiper>
         <button
-          onClick={() => swiperRef1.current?.slidePrev()}
+          onClick={() => featuredBannerSwiperRef.current?.slidePrev()}
           className="absolute bottom-0 right-14 bg-black text-white cursor-pointer z-50 hover:text-[#f47c27] transition-colors"
           aria-label="Previous product">
           <ChevronLeft className="h-14 w-14" />
         </button>
         <button
-          onClick={() => swiperRef1.current?.slideNext()}
+          onClick={() => featuredBannerSwiperRef.current?.slideNext()}
           className="absolute bottom-0 right-0 bg-[#f47c27] text-white cursor-pointer z-10 hover:text-white  transition-colors"
           aria-label="Next product">
           <ChevronRight className="h-14 w-14" />

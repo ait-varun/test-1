@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
-import type { Swiper as SwiperType } from "swiper";
+import type { Swiper as testimonalSwiperType } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -11,7 +11,7 @@ import Image from "next/image";
 import testimonials from "@/data/testimonials.json";
 
 export default function Testimonials() {
-  const swiperRef2 = useRef<SwiperType | null>(null);
+  const testimonialSwiper = useRef<testimonalSwiperType | null>(null);
 
   return (
     <section className="px-6 md:px-16 py-8 relative">
@@ -37,7 +37,7 @@ export default function Testimonials() {
             slidesPerView={1}
             loop={true}
             onSwiper={(swiper) => {
-              swiperRef2.current = swiper;
+              testimonialSwiper.current = swiper;
             }}
             pagination={{
               clickable: true,
@@ -103,13 +103,13 @@ export default function Testimonials() {
             ))}
           </Swiper>
           <button
-            onClick={() => swiperRef2.current?.slidePrev()}
+            onClick={() => testimonialSwiper.current?.slidePrev()}
             className="absolute bottom-[10%] left-10 transform -translate-y-1/2 text-[#363636] cursor-pointer z-10 hover:text-[#f47c27] transition-colors hidden md:block"
             aria-label="Previous testimonial ">
             <ChevronLeft className="h-14 w-14" />
           </button>
           <button
-            onClick={() => swiperRef2.current?.slideNext()}
+            onClick={() => testimonialSwiper.current?.slideNext()}
             className="absolute bottom-[10%] left-20 transform -translate-y-1/2 text-[#363636] cursor-pointer z-10 hover:text-[#f47c27] transition-colors hidden md:block"
             aria-label="Next testimonial ">
             <ChevronRight className="h-14 w-14" />

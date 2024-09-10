@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "src": "/dish_1.jpg",
+    "heading": "Revolutionize Your",
+    "subHeading": "Cooking Experience",
+    "quote": "with Cook’s Choice Unique Cookware",
+    "description": "The original Better Baker edible food bowl and mini muffin maker."
+  },
+  {
+    "id": 2,
+    "src": "/cook_2.jpg",
+    "heading": "Revolutionize Your",
+    "subHeading": "Cooking Experience",
+    "quote": "with Cook’s Choice Unique Cookware",
+    "description": "The original Better Baker edible food bowl and mini muffin maker."
+  },
+  {
+    "id": 3,
+    "src": "/cook_3.jpg",
+    "heading": "Revolutionize Your",
+    "subHeading": "Cooking Experience",
+    "quote": "with Cook’s Choice Unique Cookware",
+    "description": "The original Better Baker edible food bowl and mini muffin maker."
+  }
+]

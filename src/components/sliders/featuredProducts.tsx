@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
-import type { Swiper as SwiperType } from "swiper";
+import type { Swiper as featuredSwiperType } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -13,7 +13,7 @@ import BlackButton from "../common/blackButton";
 import OrangeButton from "../common/orangeButton";
 
 export default function FeaturedProducts() {
-  const swiperRef = useRef<SwiperType | null>(null);
+  const featuredSwiperRef = useRef<featuredSwiperType | null>(null);
 
   const colors = {
     darkGray: "#363636",
@@ -42,7 +42,7 @@ export default function FeaturedProducts() {
             slidesPerView={1}
             loop={true}
             onSwiper={(swiper) => {
-              swiperRef.current = swiper;
+              featuredSwiperRef.current = swiper;
             }}
             pagination={{
               clickable: true,
@@ -98,13 +98,13 @@ export default function FeaturedProducts() {
             ))}
           </Swiper>
           <button
-            onClick={() => swiperRef.current?.slidePrev()}
+            onClick={() => featuredSwiperRef.current?.slidePrev()}
             className="absolute -left-4 lg:-left-8 top-1/2 transform -translate-y-1/2 text-[#363636] cursor-pointer z-10 hover:text-[#f47c27] transition-colors"
             aria-label="Previous product">
             <ChevronLeft className="h-14 w-14" />
           </button>
           <button
-            onClick={() => swiperRef.current?.slideNext()}
+            onClick={() => featuredSwiperRef.current?.slideNext()}
             className="absolute -right-4 lg:-right-8 top-1/2 transform -translate-y-1/2 text-[#363636] cursor-pointer z-10 hover:text-[#f47c27] transition-colors"
             aria-label="Next product">
             <ChevronRight className="font-thin h-14 w-14" />
