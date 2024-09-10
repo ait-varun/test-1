@@ -46,7 +46,7 @@ export default function Blogs() {
                 alt={blog.name}
                 width={500}
                 height={500}
-                className="rounded-lg"
+                className="rounded-lg w-auto h-auto"
               />
               <div className="rounded-3xl w-[80%] absolute -bottom-48 md:-bottom-52 xl:-bottom-44 left-[10%] bg-white p-6">
                 <h2 className="text-xl font-bold beton-font">{blog.title}</h2>

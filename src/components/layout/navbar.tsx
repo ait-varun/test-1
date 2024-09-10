@@ -69,7 +69,7 @@ export default function Navbar() {
           <Image
             src="/cooks_logo.png"
             alt="Cook's Choice Logo"
-            className="w-40"
+            className="w-40 h-auto"
             width={100}
             height={100}
           />

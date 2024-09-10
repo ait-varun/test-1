@@ -168,6 +168,7 @@ export default function Footer() {
             alt="Cook's Choice"
             width={500}
             height={50}
+            className="h-auto w-auto"
           />
         </div>
       </div>
