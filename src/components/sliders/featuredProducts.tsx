@@ -64,7 +64,7 @@ export default function FeaturedProducts() {
             className="relative">
             {featuredProducts.map((product) => (
               <SwiperSlide key={product.id}>
-                <div className="bg-white p-4 rounded-lg shadow-md">
+                <div className="bg-white p-4 rounded-lg text-center">
                   <Image
                     width={100}
                     height={100}
@@ -77,7 +77,7 @@ export default function FeaturedProducts() {
                     style={{ color: colors.darkGray }}>
                     {product.name}
                   </h3>
-                  <div className="flex items-center mb-2">
+                  <div className="flex items-center justify-center mb-4">
                     {[...Array(5)].map((_, i) => (
                       <Star
                         key={i}
