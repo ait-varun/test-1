@@ -1,34 +1,10 @@
 import Image from "next/image";
 import OrangeButton from "./common/orangeButton";
 import BlackButton from "./common/blackButton";
+import blogs from "@/data/blogs.json";
 
 export default function Blogs() {
-  const blogs = [
-    {
-      id: 3,
-      src: "/blog_3.png",
-      name: "Blog 3",
-      title: "Blog Title",
-      description:
-        "Cooking bacon has never been easier, the Bacon Wizard is a great gift and perfect for holiday cooking, dorm room...",
-    },
-    {
-      id: 2,
-      src: "/blog_2.png",
-      name: "Blog 2",
-      title: "Blog Title",
-      description:
-        "Cooking bacon has never been easier, the Bacon Wizard is a great gift and perfect for holiday cooking, dorm room...",
-    },
-    {
-      id: 1,
-      src: "/blog_1.png",
-      name: "Blog 1",
-      title: "Blog Title",
-      description:
-        "Cooking bacon has never been easier, the Bacon Wizard is a great gift and perfect for holiday cooking, dorm room...",
-    },
-  ];
+
   return (
     <>
       <section className="px-6 md:px-16 mb-56">

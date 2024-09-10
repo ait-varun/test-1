@@ -8,63 +8,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
+import testimonials from "@/data/testimonials.json";
 
 export default function Testimonials() {
   const swiperRef2 = useRef<SwiperType | null>(null);
 
-  const testimonials = [
-    {
-      id: 1,
-      src: "/testimonial_1.png",
-      title: "Easy",
-      comment:
-        "It's pretty cool making cups of cakes or brownies ect, I'm only giving it 3 stars on durability bcz it came kinda scratched and bent, but on the side, so it doesn't bother me to continue using i",
-      name: "Ashley Kay",
-    },
-    {
-      id: 2,
-      src: "/testimonial_2.png",
-      title: "Endless possibilities. brownie ball, etc",
-      comment:
-        "This is a fun product to change it up on your meals. Cornbread bowl with chili. Brownie bowl and add ice cream after cooking. So many possibilities.",
-      name: "TX Grmol",
-    },
-    {
-      id: 3,
-      src: "/testimonial_3.png",
-      title: "Inspiring",
-      comment:
-        "Ooooh- I LOVE this pan !! It came with a booklet of recipes to try. It's very cool that you don't have to alter your regular recipes hardly at all. ",
-      name: "S. Crowe",
-    },
-    {
-      id: 4,
-      src: "/testimonial_1.png",
-      title: "Easy",
-      comment:
-        "It's pretty cool making cups of cakes or brownies ect, I'm only giving it 3 stars on durability bcz it came kinda scratched and bent, but on the side, so it doesn't bother me to continue using i",
-      name: "Ashley Kay",
-    },
-    {
-      id: 5,
-      src: "/testimonial_2.png",
-      title: "Endless possibilities. brownie ball, etc",
-      comment:
-        "This is a fun product to change it up on your meals. Cornbread bowl with chili. Brownie bowl and add ice cream after cooking. So many possibilities.",
-      name: "TX Grmol",
-    },
-    {
-      id: 6,
-      src: "/testimonial_3.png",
-      title: "Inspiring",
-      comment:
-        "Ooooh- I LOVE this pan !! It came with a booklet of recipes to try. It's very cool that you don't have to alter your regular recipes hardly at all. ",
-      name: "S. Crowe",
-    },
-  ];
-
   return (
-    <section className="container mx-auto px-6 md:px-16 py-8 relative">
+    <section className="px-6 md:px-16 py-8 relative">
       <div className="flex flex-col md:flex-row md:space-x-8">
         <div className="md:w-1/4 mb-8 md:mb-0">
           <h2 className="text-4xl font-extrabold beton-font mb-4">
