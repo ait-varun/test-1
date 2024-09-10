@@ -54,5 +54,33 @@
     "image": "/featured_2.png",
     "rating": 5,
     "reviews": 12
+  },
+  {
+    "id": 9,
+    "name": "Cook's Choice 2-In-1 Better Baker Edible Food Bowl & Mini Loaf Maker",
+    "image": "/featured_3.png",
+    "rating": 3,
+    "reviews": 18
+  },
+  {
+    "id": 10,
+    "name": "Cook's Choice 2-In-1 Better Baker Edible Food Bowl & Mini Loaf Maker",
+    "image": "/featured_4.png",
+    "rating": 5,
+    "reviews": 12
+  },
+  {
+    "id": 11,
+    "name": "Cook's Choice 2-In-1 Better Baker Edible Food Bowl & Mini Loaf Maker",
+    "image": "/featured_1.png",
+    "rating": 4,
+    "reviews": 15
+  },
+  {
+    "id": 12,
+    "name": "Cook's Choice 2-In-1 Better Baker Edible Food Bowl & Mini Loaf Maker",
+    "image": "/featured_2.png",
+    "rating": 3,
+    "reviews": 10
   }
 ]
