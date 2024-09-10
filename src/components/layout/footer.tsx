@@ -74,7 +74,7 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-          <div className="flex flex-col gap-4 pt-6 md:pt-0">
+          <div className="col-span-2 md:col-span-1 flex flex-col gap-4 pt-6 md:pt-0">
             <h3 className="font-bold">CONTACT US</h3>
             <ul className="space-y-4 font-semibold">
               <li className="flex gap-2 items-center">
