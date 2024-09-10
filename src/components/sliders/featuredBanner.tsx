@@ -1,12 +1,9 @@
 "use client";
-import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import type { Swiper as featuredBannerSwiper } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import { Navigation, Pagination } from "swiper/modules";
+import { useRef } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import OrangeButton from "../common/orangeButton";
 import featuredImages from "@/data/featuredImages.json";

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+
 @font-face {
   font-family: "Permanent Marker";
   src: url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"),
@@ -136,8 +140,6 @@ body {
   font-family: "Permanent Marker", cursive;
   font-weight: 400;
 }
-
-/* swiper */
 
 .swiper-pagination-bullet {
   width: 10px !important;

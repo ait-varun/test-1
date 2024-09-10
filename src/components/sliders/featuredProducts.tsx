@@ -1,12 +1,9 @@
 "use client";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 import type { Swiper as featuredSwiperType } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 import Image from "next/image";
 import featuredProducts from "@/data/products.json";
 import BlackButton from "../common/blackButton";
