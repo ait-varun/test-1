@@ -50,13 +50,13 @@ export default function Navbar() {
         </Swiper>
         <button
           onClick={() => swiperRef.current?.slidePrev()}
-          className="absolute left-2 md:left-96 top-1/2 transform -translate-y-1/2 text-white cursor-pointer z-10 hover:text-[#f47c27] transition-colors"
+          className="absolute left-2 md:left-44 xl:left-96 top-1/2 transform -translate-y-1/2 text-white cursor-pointer z-10 hover:text-[#f47c27] transition-colors"
           aria-label="Previous promotion">
           <ChevronLeft className="h-6 w-6" />
         </button>
         <button
           onClick={() => swiperRef.current?.slideNext()}
-          className="absolute right-2 md:right-96 top-1/2 transform -translate-y-1/2 text-white cursor-pointer z-10 hover:text-[#f47c27] transition-colors"
+          className="absolute right-2 md:right-44 xl:right-96 top-1/2 transform -translate-y-1/2 text-white cursor-pointer z-10 hover:text-[#f47c27] transition-colors"
           aria-label="Next promotion">
           <ChevronRight className="h-6 w-6" />
         </button>
